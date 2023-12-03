@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { GithubLogo, LinkedinLogo, X, List } from "@phosphor-icons/react";
 
 export default function NavBar() {
