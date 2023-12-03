@@ -8,13 +8,13 @@ export default function NavBar() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className="w-full fixed top-0 left-0 right-0 h-24 sm:shadow-sm">
+    <nav className="w-full fixed top-0 left-0 right-0 h-24 md:shadow-sm">
       <div className="flex justify-between items-center h-24 w-full px-4 2xl:px-16">
         <Link href="/">
-          <img src="images/logo.png" />
+          <img src="images/logo.png" className="p-4" />
         </Link>
-        <div className="hidden sm:flex">
-          <ul className="hidden sm:flex">
+        <div className="hidden md:flex p-4">
+          <ul className="hidden md:flex text-[#666666]">
             <Link href="/">
               <li className="text-base ml-10">Home</li>
             </Link>
@@ -22,7 +22,7 @@ export default function NavBar() {
               <li className="text-base ml-10">About</li>
             </Link>
             <Link href="/">
-              <li className="text-base ml-10">Tech Skills</li>
+              <li className="text-base ml-10 ">Tech Skills</li>
             </Link>
             <Link href="/">
               <li className="text-base ml-10">Projects</li>
@@ -38,14 +38,14 @@ export default function NavBar() {
             </Link>
           </ul>
         </div>
-        <div onClick={handleNav} className="sm:hidden cursor-pointer pl-24">
+        <div onClick={handleNav} className="md:hidden cursor-pointer pl-24">
           <List size={30} />
         </div>
       </div>
       <div
         className={
           menuOpen
-            ? "fixed right-0 top-0 w-[65%] sm:hidden h-screen bg-white p-10 shadow-lg transition-transform ease-in-out duration-300 transform translate-x-0"
+            ? "fixed right-0 top-0 w-[65%] md:hidden h-screen bg-white p-10 shadow-lg transition-transform ease-in-out duration-300 transform translate-x-0"
             : "fixed top-0 left-[100%] p-10 transition-transform ease-in-out duration-300 transform translate-x-full"
         }
       >
@@ -55,7 +55,7 @@ export default function NavBar() {
           </div>
         </div>
         <div className="flex-col py-4">
-          <ul>
+          <ul className="text-[#666666]">
             <Link href="/">
               <li
                 onClick={() => {
@@ -106,6 +106,14 @@ export default function NavBar() {
                 Contact
               </li>
             </Link>
+            <div className="flex justify-start py-4">
+              <Link href="/">
+                <LinkedinLogo size={25} />
+              </Link>
+              <Link href="/">
+                <GithubLogo size={25} className="ml-6" />
+              </Link>
+            </div>
           </ul>
         </div>
       </div>
