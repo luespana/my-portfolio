@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Link from "next/link";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { GithubLogo, LinkedinLogo, X, List } from "@phosphor-icons/react";
 
 export default function NavBar() {
@@ -9,17 +8,17 @@ export default function NavBar() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className="w-full fixed top-0 left-0 right-0 h-24 md:shadow-sm">
+    <header className="bg-white w-full h-24 md:shadow-sm sticky top-0">
       <div className="flex justify-between items-center h-24 w-full px-4 2xl:px-16">
         <Link href="/">
           <img src="images/logo.png" className="p-4" />
         </Link>
-        <div className="hidden md:flex p-4">
+        <nav className="hidden md:flex p-4">
           <ul className="hidden md:flex text-[#666666]">
             <Link href="/">
               <li className="text-base ml-10">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="text-base ml-10">About</li>
             </Link>
             <Link href="/">
@@ -38,7 +37,7 @@ export default function NavBar() {
               <GithubLogo size={25} className="ml-8" />
             </Link>
           </ul>
-        </div>
+        </nav>
         <div onClick={handleNav} className="md:hidden cursor-pointer pl-24">
           <List size={30} />
         </div>
@@ -118,6 +117,6 @@ export default function NavBar() {
           </ul>
         </div>
       </div>
-    </nav>
+    </header>
   );
 }
