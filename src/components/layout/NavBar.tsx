@@ -18,13 +18,13 @@ export default function NavBar() {
             <Link href="/">
               <li className="text-base ml-10">Home</li>
             </Link>
+            <Link href="/#tech">
+              <li className="text-base ml-10 ">Tech Skills</li>
+            </Link>
             <Link href="/#about">
               <li className="text-base ml-10">About</li>
             </Link>
-            <Link href="/">
-              <li className="text-base ml-10 ">Tech Skills</li>
-            </Link>
-            <Link href="/">
+            <Link href="">
               <li className="text-base ml-10">Projects</li>
             </Link>
             <Link href="/">
@@ -66,17 +66,7 @@ export default function NavBar() {
                 Home
               </li>
             </Link>
-            <Link href="/">
-              <li
-                onClick={() => {
-                  setMenuOpen(false);
-                }}
-                className="py-4 cursor-pointer"
-              >
-                About
-              </li>
-            </Link>
-            <Link href="/">
+            <Link href="/#tech">
               <li
                 onClick={() => {
                   setMenuOpen(false);
@@ -84,6 +74,16 @@ export default function NavBar() {
                 className="py-4 cursor-pointer"
               >
                 Tech Skills
+              </li>
+            </Link>
+            <Link href="/#about">
+              <li
+                onClick={() => {
+                  setMenuOpen(false);
+                }}
+                className="py-4 cursor-pointer"
+              >
+                About
               </li>
             </Link>
             <Link href="/">
