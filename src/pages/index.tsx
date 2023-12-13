@@ -140,6 +140,40 @@ export default function Home() {
           </div>
         </div>
       </Container>
+      <Container id="about">
+        <div className="pt-10">
+          <Title title="About Me" subtitle="A bit about me" />
+          <div className="pt-20">
+            <p className="text-center px-4">
+              I have been working in Front-End web development for 2 years.
+              Currently, I am studying a Bachelor's degree in Computer Science,
+              which gives me a solid foundation in programming fundamentals,
+              algorithms and data structures. I have had the opportunity to work
+              on different projects, which has allowed me to develop good skills
+              in languages like Javascript and libraries like React Js. I
+              continue to complement my academic training with specialized
+              courses in technologies such as React.js, JavaScript, Node.js and
+              Angular.
+            </p>
+            <div className="flex items-center flex-col justify-center pt-10 gap-5">
+              <input
+                type="email"
+                placeholder="email"
+                className="bg-light rounded-3xl p-1.5 pl-4 text-blue"
+              />
+              <button
+                style={{
+                  background: "linear-gradient(to right, #9F7AEA, #D53F8C)",
+                  color: "white", // Set the text color to contrast with the background
+                }}
+                className="p-3 rounded-3xl"
+              >
+                Download CV
+              </button>
+            </div>
+          </div>
+        </div>
+      </Container>
     </Layout>
   );
 }

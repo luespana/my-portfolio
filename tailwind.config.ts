@@ -17,9 +17,10 @@ const config: Config = {
     colors: {
       blue: '#42446E',
       grey: '#666666',
-      light: '#A7A7A7',
       dark: '#191919',
-      white: "#FFFFFF"
+      white: "#FFFFFF",
+      light: "rgba(241, 241, 241, 1)",
+      bluep : "rgba(66, 68, 110, 0.7)",
     }
   },
   plugins: [],
