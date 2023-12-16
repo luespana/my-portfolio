@@ -1,6 +1,7 @@
 import Container from "@/components/common/Container";
 import Layout from "@/components/common/Layout";
 import Title from "@/components/common/Title";
+import Card from "@/components/common/Card";
 
 export default function Home() {
   return (
@@ -30,10 +31,10 @@ export default function Home() {
         </div>
       </Container>
       <Container id="tech">
-        <div className="pt-4">
+        <div>
           <Title title="My Tech Stack" subtitle="Technologies I work with" />
           <div>
-            <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-16 md:pt-8">
+            <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-16">
               <div>
                 <ul className="flex flex-row items-center justify-evenly pt-20 md:gap-16">
                   <li>
@@ -85,7 +86,7 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-16 md:pt-8">
+            <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-16">
               <div>
                 <ul className="flex flex-row items-center justify-evenly pt-20 md:gap-16">
                   <li>
@@ -141,10 +142,10 @@ export default function Home() {
         </div>
       </Container>
       <Container id="about">
-        <div className="pt-10">
+        <div>
           <Title title="About Me" subtitle="A bit about me" />
-          <div className="pt-20">
-            <p className="text-center px-4">
+          <div className="pt-16 flex flex-col items-center">
+            <p className="text-center px-8 max-w-3xl">
               I have been working in Front-End web development for 2 years.
               Currently, I am studying a Bachelor's degree in Computer Science,
               which gives me a solid foundation in programming fundamentals,
@@ -155,7 +156,7 @@ export default function Home() {
               courses in technologies such as React.js, JavaScript, Node.js and
               Angular.
             </p>
-            <div className="flex items-center flex-col justify-center pt-10 gap-5">
+            <div className="flex items-center flex-col pt-10 gap-5">
               <input
                 type="email"
                 placeholder="email"
@@ -164,13 +165,92 @@ export default function Home() {
               <button
                 style={{
                   background: "linear-gradient(to right, #9F7AEA, #D53F8C)",
-                  color: "white", // Set the text color to contrast with the background
+                  color: "white",
                 }}
                 className="p-3 rounded-3xl"
               >
                 Download CV
               </button>
             </div>
+          </div>
+        </div>
+      </Container>
+      <Container id="projects">
+        <div>
+          <Title title="Proyects" subtitle="Things I’ve built so far" />
+          <div className="grid gap-4 grid-cols-3 grid-rows-2 justify-items-center pt-16 px-6">
+            <Card
+              title="Proyect Title"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
+          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
+              img="images/proyect.png"
+              onLiveClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+              onCodeClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+            />
+            <Card
+              title="Proyect Title"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
+          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
+              img="images/proyect.png"
+              onLiveClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+              onCodeClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+            />
+            <Card
+              title="Proyect Title"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
+          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
+              img="images/proyect.png"
+              onLiveClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+              onCodeClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+            />
+            <Card
+              title="Proyect Title"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
+          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
+              img="images/proyect.png"
+              onLiveClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+              onCodeClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+            />
+            <Card
+              title="Proyect Title"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
+          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
+              img="images/proyect.png"
+              onLiveClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+              onCodeClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+            />
+            <Card
+              title="Proyect Title"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
+          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
+              img="images/proyect.png"
+              onLiveClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+              onCodeClick={() =>
+                window.open("https://www.canva.com/", "_blank")
+              }
+            />
           </div>
         </div>
       </Container>

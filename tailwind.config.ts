@@ -21,6 +21,7 @@ const config: Config = {
       white: "#FFFFFF",
       light: "rgba(241, 241, 241, 1)",
       bluep : "rgba(66, 68, 110, 0.7)",
+      transparent: "#00000000",
     }
   },
   plugins: [],

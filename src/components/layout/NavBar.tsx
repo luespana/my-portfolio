@@ -24,7 +24,7 @@ export default function NavBar() {
             <Link href="/#about">
               <li className="text-base ml-10">About</li>
             </Link>
-            <Link href="">
+            <Link href="/#projects">
               <li className="text-base ml-10">Projects</li>
             </Link>
             <Link href="/">
@@ -86,7 +86,7 @@ export default function NavBar() {
                 About
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li
                 onClick={() => {
                   setMenuOpen(false);
