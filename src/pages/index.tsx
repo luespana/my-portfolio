@@ -2,6 +2,8 @@ import Container from "@/components/common/Container";
 import Layout from "@/components/common/Layout";
 import Title from "@/components/common/Title";
 import Card from "@/components/common/Card";
+import Input from "@/components/common/Input";
+import Button from "@/components/common/Button";
 
 export default function Home() {
   return (
@@ -36,7 +38,7 @@ export default function Home() {
           <div>
             <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-16">
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-20 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
                     <img
                       src="images/next.png"
@@ -61,7 +63,7 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-20 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
                     <img
                       src="images/typescript.png"
@@ -88,7 +90,7 @@ export default function Home() {
             </div>
             <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-16">
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-20 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
                     <img
                       src="images/angular.png"
@@ -113,7 +115,7 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-20 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
                     <img
                       src="images/node.png"
@@ -157,20 +159,8 @@ export default function Home() {
               Angular.
             </p>
             <div className="flex items-center flex-col pt-10 gap-5">
-              <input
-                type="email"
-                placeholder="email"
-                className="bg-light rounded-3xl p-1.5 pl-4 text-blue"
-              />
-              <button
-                style={{
-                  background: "linear-gradient(to right, #9F7AEA, #D53F8C)",
-                  color: "white",
-                }}
-                className="p-3 rounded-3xl"
-              >
-                Download CV
-              </button>
+              <Input type="email" placeholder="email" />
+              <Button name="Download CV" onClick={sendForm} />
             </div>
           </div>
         </div>
@@ -178,7 +168,7 @@ export default function Home() {
       <Container id="projects">
         <div>
           <Title title="Proyects" subtitle="Things I’ve built so far" />
-          <div className="grid gap-4 grid-cols-3 grid-rows-2 justify-items-center pt-16 px-6">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2 justify-items-center pt-16 px-6">
             <Card
               title="Proyect Title"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
