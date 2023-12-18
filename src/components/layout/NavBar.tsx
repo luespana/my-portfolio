@@ -30,10 +30,10 @@ export default function NavBar() {
             <Link href="/">
               <li className="text-base ml-10">Contact</li>
             </Link>
-            <Link href="/">
+            <Link href="https://www.linkedin.com/in/lucia-espana/">
               <LinkedinLogo size={25} className="ml-10" />
             </Link>
-            <Link href="/">
+            <Link href="https://github.com/luespana">
               <GithubLogo size={25} className="ml-8" />
             </Link>
           </ul>

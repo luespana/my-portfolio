@@ -1,21 +1,21 @@
 import React from "react";
 
 type ButtonProps = {
-  name: string;
-  onClick: () => void;
+  label: string;
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
-export default function Button({ name, onClick }: ButtonProps) {
+export default function Button({ label, onClick }: ButtonProps) {
   return (
     <button
-      onClick={onClick}
+      onClick={(e) => onClick(e)}
       style={{
         background: "linear-gradient(to right, #9F7AEA, #D53F8C)",
         color: "white",
       }}
       className="p-3 rounded-3xl"
     >
-      {name}
+      {label}
     </button>
   );
 }

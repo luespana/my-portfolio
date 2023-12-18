@@ -4,8 +4,47 @@ import Title from "@/components/common/Title";
 import Card from "@/components/common/Card";
 import Input from "@/components/common/Input";
 import Button from "@/components/common/Button";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
+import { downloadCv } from "@/utils/downloadFile";
 
 export default function Home() {
+  const [disabled, setDisabled] = useState(true);
+  const [email, setEmail] = useState("");
+  const form = useRef(null);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+    toast.loading("Downloading");
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    const isValid = emailPattern.test(email);
+
+    if (isValid && form.current) {
+      emailjs
+        .sendForm(
+          "service_ua6wyak",
+          "template_2d3kytx",
+          form.current,
+          "VEyYzcHpXTzu8HCtK"
+        )
+        .then(
+          (result) => {
+            setDisabled(true);
+            setEmail("");
+            downloadCv("Lucia España - Resume (English).pdf");
+            toast.dismiss();
+          },
+          (error) => {
+            console.error(error.text);
+          }
+        );
+    } else {
+      toast.dismiss();
+      toast.error("The email is invalid");
+    }
+  };
+
   return (
     <Layout>
       <Container id="home">
@@ -158,9 +197,34 @@ export default function Home() {
               courses in technologies such as React.js, JavaScript, Node.js and
               Angular.
             </p>
-            <div className="flex items-center flex-col pt-10 gap-5">
-              <Input type="email" placeholder="email" />
-              <Button name="Download CV" onClick={sendForm} />
+            <div>
+              {disabled === false ? (
+                <form
+                  ref={form}
+                  className="flex items-center flex-col pt-10 gap-5"
+                >
+                  <Input
+                    type="email"
+                    placeholder="email"
+                    value={email}
+                    onChange={(value) => setEmail(value)}
+                  />
+                  <Button label="Download CV" onClick={sendEmail} />
+                </form>
+              ) : (
+                <div className="p-12">
+                  <span
+                    className="text-xl font-semibold"
+                    style={{
+                      background: "linear-gradient(to right, #9F7AEA, #D53F8C)",
+                      WebkitBackgroundClip: "text",
+                      color: "transparent",
+                    }}
+                  >
+                    Successful Download
+                  </span>
+                </div>
+              )}
             </div>
           </div>
         </div>
