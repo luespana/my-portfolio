@@ -10,7 +10,7 @@ import toast from "react-hot-toast";
 import { downloadCv } from "@/utils/downloadFile";
 
 export default function Home() {
-  const [disabled, setDisabled] = useState(true);
+  const [disabled, setDisabled] = useState(false);
   const [email, setEmail] = useState("");
   const form = useRef(null);
 
