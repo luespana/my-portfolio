@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 type CardProps = {
   title: string;
   description: string;
-  img: "images/proyect.png" | "images/img.png";
+  img: "images/weather.png" | "images/proyect.png" | "images/star-wars.png";
   onLiveClick: React.MouseEventHandler<HTMLButtonElement>;
   onCodeClick: React.MouseEventHandler<HTMLButtonElement>;
 };

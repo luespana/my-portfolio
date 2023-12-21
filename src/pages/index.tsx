@@ -234,27 +234,31 @@ export default function Home() {
           <Title title="Proyects" subtitle="Things I’ve built so far" />
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2 justify-items-center pt-16 px-6">
             <Card
-              title="Proyect Title"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
-          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
-              img="images/proyect.png"
+              title="Weather App"
+              description="The Weather App is a web application designed to provide users with up-to-date weather information for a specified location. Users can easily check the current weather conditions, temperature, humidity, and other relevant details for a chosen city. "
+              img="images/weather.png"
               onLiveClick={() =>
-                window.open("https://www.canva.com/", "_blank")
+                window.open(
+                  "https://weather-app-luespana.vercel.app/",
+                  "_blank"
+                )
               }
               onCodeClick={() =>
-                window.open("https://www.canva.com/", "_blank")
+                window.open("https://github.com/luespana/Weather-App", "_blank")
               }
             />
             <Card
-              title="Proyect Title"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
-          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
-              img="images/proyect.png"
+              title="Star Wars Characters"
+              description="The Star Wars Encyclopedia is a comprehensive online resource that provides information about characters, planets, and events from the Star Wars universe. Detailed character information is obtained by integrating an external Star Wars API."
+              img="images/star-wars.png"
               onLiveClick={() =>
-                window.open("https://www.canva.com/", "_blank")
+                window.open("https://star-wars-luespana.vercel.app/", "_blank")
               }
               onCodeClick={() =>
-                window.open("https://www.canva.com/", "_blank")
+                window.open(
+                  "https://github.com/luespana/star-wars-api/tree/main/app",
+                  "_blank"
+                )
               }
             />
             <Card

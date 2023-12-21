@@ -14,7 +14,7 @@ export default function NavBar() {
           <img src="images/logo.png" className="p-4" />
         </Link>
         <nav className="hidden md:flex p-4">
-          <ul className="hidden md:flex text-[#666666]">
+          <ul className="hidden md:flex text-grey">
             <Link href="/">
               <li className="text-base ml-10">Home</li>
             </Link>
