@@ -17,7 +17,7 @@ export default function Input({
     <input
       type={type}
       placeholder={placeholder}
-      className="bg-light rounded-3xl p-1.5 pl-4 text-blue min-w-[320px]"
+      className="bg-light rounded-3xl p-1.5 pl-4 text-blue min-w-[320px] outline-none caret-bluep"
       onChange={(e) => {
         onChange(e.target.value);
       }}

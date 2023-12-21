@@ -4,12 +4,12 @@ import { GithubLogo, LinkedinLogo, Smiley } from "@phosphor-icons/react";
 
 export default function Footer() {
   return (
-    <footer className="bg-white w-full h-24 md:shadow-sm">
+    <footer className="bg-white w-full h-40 flex items-center justify-around md:shadow-sm md:flex-col">
       <div className="flex flex-row justify-between items-center">
         <Link href="/">
           <img src="images/logo.png" className="p-4" />
         </Link>
-        <div className="flex flex-row">
+        <div className="hidden md:flex md:flex-row">
           <Link
             href="https://www.linkedin.com/in/lucia-espana/"
             target="_blank"
@@ -21,8 +21,8 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="flex flex row items-center">
-        <nav className="md:flex p-4">
+      <div className="md:flex md:flex-row items-center">
+        <nav className="hidden md:flex p-4">
           <ul className="md:flex text-[#666666]">
             <Link href="/">
               <li className="text-base ml-10">Home</li>
@@ -41,7 +41,7 @@ export default function Footer() {
             </Link>
           </ul>
         </nav>
-        <p>Built by Lucía España :)</p>
+        <p className="text-grey">Built by Lucía España :)</p>
       </div>
     </footer>
   );

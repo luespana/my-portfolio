@@ -8,7 +8,7 @@ export default function NavBar() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <header className="bg-white w-full h-24 md:shadow-sm sticky top-0">
+    <header className="bg-white w-full h-24 z-10 md:shadow-sm sticky top-0">
       <div className="flex justify-between items-center h-24 w-full px-4 2xl:px-16">
         <Link href="/">
           <img src="images/logo.png" className="p-4" />
