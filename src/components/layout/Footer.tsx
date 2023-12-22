@@ -8,7 +8,13 @@ export default function Footer() {
     <div className="bg-white w-full h-36 flex items-center justify-around shadow-2xl mt-6">
       <div className="flex flex-row justify-between items-center">
         <Link href="/">
-          <Image src="images/logo.png" className="p-4" alt="Logo" />
+          <Image
+            src="/images/logo.png"
+            className="p-4"
+            alt="Logo"
+            width={70}
+            height={70}
+          />
         </Link>
         <div className="hidden text-grey md:flex md:flex-row">
           <Link

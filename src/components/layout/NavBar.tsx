@@ -12,7 +12,13 @@ export default function NavBar() {
     <header className="bg-white w-full h-24 z-10 md:shadow-sm sticky top-0">
       <div className="flex justify-between items-center h-24 w-full px-4 2xl:px-16">
         <Link href="/">
-          <Image src="images/logo.png" className="p-4" alt="Logo" />
+          <Image
+            src="/images/logo.png"
+            className="p-4"
+            alt="Logo"
+            width={80}
+            height={80}
+          />
         </Link>
         <nav className="hidden md:flex p-4">
           <ul className="hidden md:flex text-grey">

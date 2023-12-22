@@ -65,9 +65,11 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="images/img.png"
+              src="/images/img.png"
               alt="me"
-              className="w-[80%] pt-10 md:w-[100%]"
+              className="pt-10"
+              width={300}
+              height={300}
             />
           </div>
         </div>
@@ -81,23 +83,29 @@ export default function Home() {
                 <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
                     <Image
-                      src="images/next.png"
+                      src="/images/next.png"
                       alt="git"
                       className="w-[70px] h-[70px]"
+                      width={70}
+                      height={70}
                     />
                   </li>
                   <li>
                     <Image
-                      src="images/javascript.png"
+                      src="/images/javascript.png"
                       alt="javascript"
                       className="w-[70px] h-[70px]"
+                      width={70}
+                      height={70}
                     />
                   </li>
                   <li>
                     <Image
-                      src="images/react.png"
+                      src="/images/react.png"
                       alt="react"
                       className="w-[70px] h-[60px]"
+                      width={70}
+                      height={60}
                     />
                   </li>
                 </ul>
@@ -106,23 +114,29 @@ export default function Home() {
                 <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
                     <Image
-                      src="images/typescript.png"
+                      src="/images/typescript.png"
                       alt="typescript"
                       className="w-[70px] h-[70px]"
+                      width={70}
+                      height={70}
                     />
                   </li>
                   <li>
                     <Image
-                      src="images/git.png"
+                      src="/images/git.png"
                       alt="git"
                       className="w-[70px] h-[70px]"
+                      width={70}
+                      height={70}
                     />
                   </li>
                   <li>
                     <Image
-                      src="images/firebase.png"
+                      src="/images/firebase.png"
                       alt="firebase"
                       className="w-[50px] h-[80px]"
+                      width={50}
+                      height={80}
                     />
                   </li>
                 </ul>
@@ -133,23 +147,29 @@ export default function Home() {
                 <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
                     <Image
-                      src="images/angular.png"
+                      src="/images/angular.png"
                       alt="angular"
                       className="w-[70px] h-[70px]"
+                      width={70}
+                      height={70}
                     />
                   </li>
                   <li>
                     <Image
-                      src="images/tailwind.png"
+                      src="/images/tailwind.png"
                       alt="tailwind"
                       className="w-[70px] h-[60px]"
+                      width={70}
+                      height={60}
                     />
                   </li>
                   <li>
                     <Image
-                      src="images/wordpress.png"
+                      src="/images/wordpress.png"
                       alt="wordpress"
                       className="w-[70px] h-[70px]"
+                      width={70}
+                      height={70}
                     />
                   </li>
                 </ul>
@@ -158,23 +178,29 @@ export default function Home() {
                 <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
                     <Image
-                      src="images/node.png"
+                      src="/images/node.png"
                       alt="node"
                       className="w-[70px] h-[70px]"
+                      width={70}
+                      height={70}
                     />
                   </li>
                   <li>
                     <Image
-                      src="images/css.png"
+                      src="/images/css.png"
                       alt="css"
                       className="w-[70px] h-[70px]"
+                      width={70}
+                      height={70}
                     />
                   </li>
                   <li>
                     <Image
-                      src="images/figma.png"
+                      src="/images/figma.png"
                       alt="figma"
                       className="w-[65px] h-[75px]"
+                      width={65}
+                      height={75}
                     />
                   </li>
                 </ul>
