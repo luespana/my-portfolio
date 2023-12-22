@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { GithubLogo, LinkedinLogo, X, List } from "@phosphor-icons/react";
+import Image from "next/image";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ export default function NavBar() {
     <header className="bg-white w-full h-24 z-10 md:shadow-sm sticky top-0">
       <div className="flex justify-between items-center h-24 w-full px-4 2xl:px-16">
         <Link href="/">
-          <img src="images/logo.png" className="p-4" />
+          <Image src="images/logo.png" className="p-4" alt="Logo" />
         </Link>
         <nav className="hidden md:flex p-4">
           <ul className="hidden md:flex text-grey">

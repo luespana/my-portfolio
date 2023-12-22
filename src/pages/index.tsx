@@ -8,6 +8,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import { downloadCv } from "@/utils/downloadFile";
+import Image from "next/image";
 
 export default function Home() {
   const [disabled, setDisabled] = useState(false);
@@ -63,7 +64,7 @@ export default function Home() {
             <p>I create Digital Solutions</p>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="images/img.png"
               alt="me"
               className="w-[80%] pt-10 md:w-[100%]"
@@ -79,21 +80,21 @@ export default function Home() {
               <div>
                 <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
-                    <img
+                    <Image
                       src="images/next.png"
                       alt="git"
                       className="w-[70px] h-[70px]"
                     />
                   </li>
                   <li>
-                    <img
+                    <Image
                       src="images/javascript.png"
                       alt="javascript"
                       className="w-[70px] h-[70px]"
                     />
                   </li>
                   <li>
-                    <img
+                    <Image
                       src="images/react.png"
                       alt="react"
                       className="w-[70px] h-[60px]"
@@ -104,21 +105,21 @@ export default function Home() {
               <div>
                 <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
-                    <img
+                    <Image
                       src="images/typescript.png"
                       alt="typescript"
                       className="w-[70px] h-[70px]"
                     />
                   </li>
                   <li>
-                    <img
+                    <Image
                       src="images/git.png"
                       alt="git"
                       className="w-[70px] h-[70px]"
                     />
                   </li>
                   <li>
-                    <img
+                    <Image
                       src="images/firebase.png"
                       alt="firebase"
                       className="w-[50px] h-[80px]"
@@ -131,23 +132,23 @@ export default function Home() {
               <div>
                 <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
-                    <img
+                    <Image
                       src="images/angular.png"
                       alt="angular"
                       className="w-[70px] h-[70px]"
                     />
                   </li>
                   <li>
-                    <img
+                    <Image
                       src="images/tailwind.png"
                       alt="tailwind"
                       className="w-[70px] h-[60px]"
                     />
                   </li>
                   <li>
-                    <img
-                      src="images/github.png"
-                      alt="github"
+                    <Image
+                      src="images/wordpress.png"
+                      alt="wordpress"
                       className="w-[70px] h-[70px]"
                     />
                   </li>
@@ -156,21 +157,21 @@ export default function Home() {
               <div>
                 <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
                   <li>
-                    <img
+                    <Image
                       src="images/node.png"
                       alt="node"
                       className="w-[70px] h-[70px]"
                     />
                   </li>
                   <li>
-                    <img
+                    <Image
                       src="images/css.png"
                       alt="css"
                       className="w-[70px] h-[70px]"
                     />
                   </li>
                   <li>
-                    <img
+                    <Image
                       src="images/figma.png"
                       alt="figma"
                       className="w-[65px] h-[75px]"
@@ -188,14 +189,14 @@ export default function Home() {
           <div className="pt-16 flex flex-col items-center">
             <p className="text-center px-8 max-w-3xl">
               I have been working in Front-End web development for 2 years.
-              Currently, I am studying a Bachelor's degree in Computer Science,
-              which gives me a solid foundation in programming fundamentals,
-              algorithms and data structures. I have had the opportunity to work
-              on different projects, which has allowed me to develop good skills
-              in languages like Javascript and libraries like React Js. I
-              continue to complement my academic training with specialized
-              courses in technologies such as React.js, JavaScript, Node.js and
-              Angular.
+              Currently, I am studying a Bachelor&apos;s degree in Computer
+              Science, which gives me a solid foundation in programming
+              fundamentals, algorithms and data structures. I have had the
+              opportunity to work on different projects, which has allowed me to
+              develop good skills in languages like Javascript and libraries
+              like React Js. I continue to complement my academic training with
+              specialized courses in technologies such as React.js, JavaScript,
+              Node.js and Angular.
             </p>
             <div>
               {disabled === false ? (
@@ -262,27 +263,31 @@ export default function Home() {
               }
             />
             <Card
-              title="Proyect Title"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
-          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
-              img="images/proyect.png"
+              title="Filmfinity"
+              description="This project showcases my skills in front-end development using React.js and my ability to integrate real-time data management with Firebase. The website offers a user-friendly experience, allowing users to explore, purchase, and interact with a diverse catalog of films."
+              img="images/filmfinity.png"
               onLiveClick={() =>
-                window.open("https://www.canva.com/", "_blank")
+                window.open("https://filmfinity-project.vercel.app/", "_blank")
               }
               onCodeClick={() =>
-                window.open("https://www.canva.com/", "_blank")
+                window.open(
+                  "https://github.com/luespana/trabajo-final",
+                  "_blank"
+                )
               }
             />
             <Card
-              title="Proyect Title"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
-          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
-              img="images/proyect.png"
+              title="Paloma Sansores"
+              description="I contribute to the development of this web project where I played a role in both frontend and backend aspects. Leveraging technologies such as Next.js, Tailwind CSS, and Firebase, we crafted an engaging user interface with a clean design and an intuitive user experience."
+              img="images/paloma.png"
               onLiveClick={() =>
-                window.open("https://www.canva.com/", "_blank")
+                window.open("https://www.palomasansores360.com/", "_blank")
               }
               onCodeClick={() =>
-                window.open("https://www.canva.com/", "_blank")
+                window.open(
+                  "https://github.com/ezeagusibarra001/paloma-sansores",
+                  "_blank"
+                )
               }
             />
             <Card

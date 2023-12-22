@@ -1,13 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import { WhatsappLogo, EnvelopeSimple } from "@phosphor-icons/react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <div className="bg-white w-full h-36 flex items-center justify-around shadow-2xl mt-6">
       <div className="flex flex-row justify-between items-center">
         <Link href="/">
-          <img src="images/logo.png" className="p-4" />
+          <Image src="images/logo.png" className="p-4" alt="Logo" />
         </Link>
         <div className="hidden text-grey md:flex md:flex-row">
           <Link
