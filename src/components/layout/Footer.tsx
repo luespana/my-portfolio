@@ -16,13 +16,24 @@ export default function Footer() {
           >
             <EnvelopeSimple size={28} className="ml-8" />
           </Link>
-          <Link href="https://github.com/luespana" target="_blank">
+          <Link
+            href="https://api.whatsapp.com/send?phone=541130900186&text=Hi!%20I%20saw%20your%20profile..."
+            target="_blank"
+          >
             <WhatsappLogo size={28} className="ml-8" />
           </Link>
         </div>
       </div>
       <div className="md:flex md:flex-row items-center">
-        <p className="text-dark">Built by Lucía España :)</p>
+        <div
+          style={{
+            background: "linear-gradient(to right, #9F7AEA, #D53F8C)",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+          }}
+        >
+          <p>Built by Lucía España :)</p>
+        </div>
       </div>
     </div>
   );
