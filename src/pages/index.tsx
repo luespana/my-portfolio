@@ -254,13 +254,10 @@ export default function Home() {
               description="The Weather App is a web application designed to provide users with up-to-date weather information for a specified location. Users can easily check the current weather conditions, temperature, humidity, and other relevant details for a chosen city. "
               img="images/weather.png"
               onLiveClick={() =>
-                window.open(
-                  "https://weather-app-luespana.vercel.app/",
-                  "_blank"
-                )
+                window.open("https://weather-app-luespana.vercel.app/")
               }
               onCodeClick={() =>
-                window.open("https://github.com/luespana/Weather-App", "_blank")
+                window.open("https://github.com/luespana/Weather-App")
               }
             />
             <Card
@@ -268,12 +265,11 @@ export default function Home() {
               description="The Star Wars Encyclopedia is a comprehensive online resource that provides information about characters, planets, and events from the Star Wars universe. Detailed character information is obtained by integrating an external Star Wars API."
               img="images/star-wars.png"
               onLiveClick={() =>
-                window.open("https://star-wars-luespana.vercel.app/", "_blank")
+                window.open("https://star-wars-luespana.vercel.app/")
               }
               onCodeClick={() =>
                 window.open(
-                  "https://github.com/luespana/star-wars-api/tree/main/app",
-                  "_blank"
+                  "https://github.com/luespana/star-wars-api/tree/main/app"
                 )
               }
             />
@@ -282,13 +278,10 @@ export default function Home() {
               description="This project showcases my skills in front-end development using React.js and my ability to integrate real-time data management with Firebase. The website offers a user-friendly experience, allowing users to explore, purchase, and interact with a diverse catalog of films."
               img="images/filmfinity.png"
               onLiveClick={() =>
-                window.open("https://filmfinity-project.vercel.app/", "_blank")
+                window.open("https://filmfinity-project.vercel.app/")
               }
               onCodeClick={() =>
-                window.open(
-                  "https://github.com/luespana/trabajo-final",
-                  "_blank"
-                )
+                window.open("https://github.com/luespana/trabajo-final")
               }
             />
             <Card
@@ -296,37 +289,31 @@ export default function Home() {
               description="I contribute to the development of this web project where I played a role in both frontend and backend aspects. Leveraging technologies such as Next.js, Tailwind CSS, and Firebase, we crafted an engaging user interface with a clean design and an intuitive user experience."
               img="images/paloma.png"
               onLiveClick={() =>
-                window.open("https://www.palomasansores360.com/", "_blank")
+                window.open("https://www.palomasansores360.com/")
               }
               onCodeClick={() =>
                 window.open(
-                  "https://github.com/ezeagusibarra001/paloma-sansores",
-                  "_blank"
+                  "https://github.com/ezeagusibarra001/paloma-sansores"
                 )
               }
             />
             <Card
-              title="Proyect Title"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
-          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
-              img="images/proyect.png"
-              onLiveClick={() =>
-                window.open("https://www.canva.com/", "_blank")
-              }
-              onCodeClick={() =>
-                window.open("https://www.canva.com/", "_blank")
-              }
+              title="Freyja"
+              description="I am the developer and designer behind this live website. It is an e-commerce site that allows the user to view all products according to their categories, add them to the cart, and then proceed with the purchase. It was created with WordPress for a client from Uruguay."
+              img="images/freyja.png"
+              onLiveClick={() => window.open("https://freyja.com.uy/")}
+              onCodeClick={(e) => {
+                e.preventDefault();
+                window.location.href = "/#projects";
+              }}
             />
             <Card
-              title="Proyect Title"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illum,
-          dolorem quibusdam, sint quia reprehenderit ea labore quaerat fuga."
-              img="images/proyect.png"
-              onLiveClick={() =>
-                window.open("https://www.canva.com/", "_blank")
-              }
+              title="Doggo"
+              description="Doggo is a web application crafted with React.js, dedicated to simplifying the process of responsible dog adoption. Users can seamlessly submit details about lost or found dogs, facilitating a quicker and more efficient search for their owners. All data is stored in Firebase."
+              img="images/doggo.png"
+              onLiveClick={() => window.open("https://www.doggoapp.com.ar/")}
               onCodeClick={() =>
-                window.open("https://www.canva.com/", "_blank")
+                window.open("https://github.com/ezeagusibarra001/doggo-web")
               }
             />
           </div>

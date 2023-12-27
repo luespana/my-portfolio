@@ -11,10 +11,11 @@ type CardProps = {
   description: string;
   img:
     | "images/weather.png"
-    | "images/proyect.png"
+    | "images/doggo.png"
     | "images/star-wars.png"
     | "images/filmfinity.png"
-    | "images/paloma.png";
+    | "images/paloma.png"
+    | "images/freyja.png";
   onLiveClick: React.MouseEventHandler<HTMLButtonElement>;
   onCodeClick: React.MouseEventHandler<HTMLButtonElement>;
 };

@@ -17,10 +17,7 @@ export default function Footer() {
           />
         </Link>
         <div className="hidden text-grey md:flex md:flex-row">
-          <Link
-            href="https://www.linkedin.com/in/lucia-espana/"
-            target="_blank"
-          >
+          <Link href="mailto:luciaespana25@gmail.com" target="_blank">
             <EnvelopeSimple size={28} className="ml-8" />
           </Link>
           <Link
