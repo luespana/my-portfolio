@@ -57,7 +57,7 @@ export default function Home() {
               WebkitBackgroundClip: "text",
               color: "transparent",
             }}
-            className="md:text-5xl text-4xl md:leading-snug font-black leading-tight"
+            className="md:text-5xl text-4xl md:leading-snug font-black leading-tight p-6 md:p-4"
           >
             <p>Hi! My name is Lucia.</p>
             <p>I create Digital Solutions</p>
