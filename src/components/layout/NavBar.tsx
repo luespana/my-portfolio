@@ -16,8 +16,8 @@ export default function NavBar() {
             src="/images/logo.png"
             className="p-4"
             alt="Logo"
-            width={80}
-            height={80}
+            width={75}
+            height={75}
           />
         </Link>
         <nav className="hidden md:flex p-4">
@@ -33,9 +33,6 @@ export default function NavBar() {
             </Link>
             <Link href="/#projects">
               <li className="text-base ml-10">Projects</li>
-            </Link>
-            <Link href="/">
-              <li className="text-base ml-10">Contact</li>
             </Link>
             <Link
               href="https://www.linkedin.com/in/lucia-espana/"
@@ -106,16 +103,7 @@ export default function NavBar() {
                 Projects
               </li>
             </Link>
-            <Link href="/">
-              <li
-                onClick={() => {
-                  setMenuOpen(false);
-                }}
-                className="py-4 cursor-pointer"
-              >
-                Contact
-              </li>
-            </Link>
+            <Link href="/"></Link>
             <div className="flex justify-start py-4">
               <Link href="/">
                 <LinkedinLogo size={25} />

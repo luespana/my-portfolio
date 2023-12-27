@@ -9,6 +9,7 @@ import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import { downloadCv } from "@/utils/downloadFile";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const [disabled, setDisabled] = useState(false);
@@ -49,28 +50,28 @@ export default function Home() {
   return (
     <Layout>
       <Container id="home">
-        <div className="flex flex-col justify-around items-center pt-4 md:py-18 md:px-10 md:flex-row">
+        <div className="text-center md:pt-20 pt-12">
           <div
             style={{
               background: "linear-gradient(to right, #9F7AEA, #D53F8C)",
               WebkitBackgroundClip: "text",
               color: "transparent",
             }}
-            className="text-4xl leading-snug font-extrabold text-center md:text-left"
+            className="md:text-5xl text-4xl md:leading-snug font-black leading-tight"
           >
-            <p>Hi,</p>
-            <p>My name is</p>
-            <p>Lucia.</p>
+            <p>Hi! My name is Lucia.</p>
             <p>I create Digital Solutions</p>
           </div>
-          <div className="flex justify-center">
-            <Image
-              src="/images/img.png"
-              alt="me"
-              className="pt-10"
-              width={300}
-              height={300}
-            />
+          <div className="p-6 text-grey md:px-60">
+            <p>
+              Welcome to my digital space. From web applications to efficient
+              algorithms, my mission is to translate ideas into code.
+            </p>
+          </div>
+          <div className="p-3 rounded-3xl w-36 block m-auto bg-grey">
+            <Link href="/#projects">
+              <div className="text-light">View Projects</div>
+            </Link>
           </div>
         </div>
       </Container>
@@ -80,12 +81,11 @@ export default function Home() {
           <div>
             <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-16">
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-8 md:pt-12 md:gap-16">
                   <li>
                     <Image
                       src="/images/next.png"
-                      alt="git"
-                      className="w-[70px] h-[70px]"
+                      alt="next"
                       width={70}
                       height={70}
                     />
@@ -94,7 +94,6 @@ export default function Home() {
                     <Image
                       src="/images/javascript.png"
                       alt="javascript"
-                      className="w-[70px] h-[70px]"
                       width={70}
                       height={70}
                     />
@@ -103,7 +102,6 @@ export default function Home() {
                     <Image
                       src="/images/react.png"
                       alt="react"
-                      className="w-[70px] h-[60px]"
                       width={70}
                       height={60}
                     />
@@ -111,12 +109,11 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-8 md:pt-12 md:gap-16">
                   <li>
                     <Image
                       src="/images/typescript.png"
                       alt="typescript"
-                      className="w-[70px] h-[70px]"
                       width={70}
                       height={70}
                     />
@@ -125,7 +122,6 @@ export default function Home() {
                     <Image
                       src="/images/git.png"
                       alt="git"
-                      className="w-[70px] h-[70px]"
                       width={70}
                       height={70}
                     />
@@ -134,7 +130,6 @@ export default function Home() {
                     <Image
                       src="/images/firebase.png"
                       alt="firebase"
-                      className="w-[50px] h-[80px]"
                       width={50}
                       height={80}
                     />
@@ -144,12 +139,11 @@ export default function Home() {
             </div>
             <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-16">
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-8 md:pt-12 md:gap-16">
                   <li>
                     <Image
                       src="/images/angular.png"
                       alt="angular"
-                      className="w-[70px] h-[70px]"
                       width={70}
                       height={70}
                     />
@@ -158,7 +152,6 @@ export default function Home() {
                     <Image
                       src="/images/tailwind.png"
                       alt="tailwind"
-                      className="w-[70px] h-[60px]"
                       width={70}
                       height={60}
                     />
@@ -167,7 +160,6 @@ export default function Home() {
                     <Image
                       src="/images/wordpress.png"
                       alt="wordpress"
-                      className="w-[70px] h-[70px]"
                       width={70}
                       height={70}
                     />
@@ -175,12 +167,11 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-12 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-8 md:pt-12 md:gap-16">
                   <li>
                     <Image
                       src="/images/node.png"
                       alt="node"
-                      className="w-[70px] h-[70px]"
                       width={70}
                       height={70}
                     />
@@ -189,7 +180,6 @@ export default function Home() {
                     <Image
                       src="/images/css.png"
                       alt="css"
-                      className="w-[70px] h-[70px]"
                       width={70}
                       height={70}
                     />
@@ -198,9 +188,8 @@ export default function Home() {
                     <Image
                       src="/images/figma.png"
                       alt="figma"
-                      className="w-[65px] h-[75px]"
-                      width={65}
-                      height={75}
+                      width={60}
+                      height={60}
                     />
                   </li>
                 </ul>
@@ -210,9 +199,9 @@ export default function Home() {
         </div>
       </Container>
       <Container id="about">
-        <div>
+        <div className="mt-6">
           <Title title="About Me" subtitle="A bit about me" />
-          <div className="pt-16 flex flex-col items-center">
+          <div className="md:pt-16 pt-8 flex flex-col items-center">
             <p className="text-center px-8 max-w-3xl">
               I have been working in Front-End web development for 2 years.
               Currently, I am studying a Bachelor&apos;s degree in Computer
@@ -257,9 +246,9 @@ export default function Home() {
         </div>
       </Container>
       <Container id="projects">
-        <div>
+        <div className="mt-6">
           <Title title="Proyects" subtitle="Things I’ve built so far" />
-          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2 justify-items-center pt-16 px-6">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2 justify-items-center pt-8 md:pt-16 px-6">
             <Card
               title="Weather App"
               description="The Weather App is a web application designed to provide users with up-to-date weather information for a specified location. Users can easily check the current weather conditions, temperature, humidity, and other relevant details for a chosen city. "

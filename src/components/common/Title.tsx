@@ -7,7 +7,7 @@ type TitlesProps = {
 
 export default function Titles({ title, subtitle }: TitlesProps) {
   return (
-    <div className="text-center pt-10">
+    <div className="text-center">
       <h2 className="text-xl text-blue font-extrabold">{title}</h2>
       <p>{subtitle}</p>
     </div>

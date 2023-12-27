@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { WhatsappLogo, EnvelopeSimple } from "@phosphor-icons/react";
+import { ChatCircle, EnvelopeSimple } from "@phosphor-icons/react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -27,7 +27,7 @@ export default function Footer() {
             href="https://api.whatsapp.com/send?phone=541130900186&text=Hi!%20I%20saw%20your%20profile..."
             target="_blank"
           >
-            <WhatsappLogo size={28} className="ml-8" />
+            <ChatCircle size={26} className="ml-8" />
           </Link>
         </div>
       </div>
