@@ -203,7 +203,7 @@ export default function Home() {
           <Title title="About Me" subtitle="A bit about me" />
           <div className="md:pt-16 pt-8 flex flex-col items-center">
             <p className="text-center px-8 max-w-3xl">
-              I have been working in Front-End web development for 3 years.
+              I have been working in Front-End web development for 2 years.
               Currently, I am studying a Bachelor&apos;s degree in Computer
               Science, which gives me a solid foundation in programming
               fundamentals, algorithms and data structures. I have had the
