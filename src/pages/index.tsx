@@ -21,13 +21,16 @@ export default function Home() {
     toast.loading("Downloading");
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     const isValid = emailPattern.test(email);
-
+    console.log(form.current);
     if (isValid && form.current) {
       emailjs
-        .sendForm(
+        .send(
           "service_ua6wyak",
           "template_2d3kytx",
-          form.current,
+          {
+            user_email: email,
+            reply_to: "luciaespana25@gmail.com",
+          },
           "VEyYzcHpXTzu8HCtK"
         )
         .then(
