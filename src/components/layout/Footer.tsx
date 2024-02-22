@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="bg-white w-full h-36 flex items-center justify-around shadow-2xl mt-6">
       <div className="flex flex-row justify-between items-center">
-        <Link href="/">
+        <Link href="">
           <Image
             src="/images/logo.png"
             className="p-4"

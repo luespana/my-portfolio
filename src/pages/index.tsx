@@ -53,7 +53,7 @@ export default function Home() {
   return (
     <Layout>
       <Container id="home">
-        <div className="text-center md:pt-20 pt-12">
+        <div className="text-center">
           <div
             style={{
               background: "linear-gradient(to right, #9F7AEA, #D53F8C)",
@@ -84,7 +84,7 @@ export default function Home() {
           <div>
             <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-16">
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-8 md:pt-12 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-8 gap-12 sm:gap-24 md:pt-12 md:gap-16">
                   <li>
                     <Image
                       src="/images/next.png"
@@ -112,7 +112,7 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-8 md:pt-12 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-8 gap-12 sm:gap-24 md:pt-12 md:gap-16">
                   <li>
                     <Image
                       src="/images/typescript.png"
@@ -142,7 +142,7 @@ export default function Home() {
             </div>
             <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-16">
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-8 md:pt-12 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-8 gap-12 sm:gap-24 md:pt-12 md:gap-16">
                   <li>
                     <Image
                       src="/images/angular.png"
@@ -170,7 +170,7 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <ul className="flex flex-row items-center justify-evenly pt-8 md:pt-12 md:gap-16">
+                <ul className="flex flex-row items-center justify-evenly pt-8 gap-12 sm:gap-24 md:pt-12 md:gap-16">
                   <li>
                     <Image
                       src="/images/node.png"

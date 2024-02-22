@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <header className="bg-white w-full h-24 z-10 md:shadow-sm sticky top-0">
       <div className="flex justify-between items-center h-24 w-full px-4 2xl:px-16">
-        <Link href="/">
+        <Link href="">
           <Image
             src="/images/logo.png"
             className="p-4"
@@ -22,7 +22,7 @@ export default function NavBar() {
         </Link>
         <nav className="hidden md:flex p-4">
           <ul className="hidden md:flex text-grey">
-            <Link href="/">
+            <Link href="">
               <li className="text-base ml-10">Home</li>
             </Link>
             <Link href="/#tech">
@@ -63,7 +63,7 @@ export default function NavBar() {
         </div>
         <div className="flex-col py-4">
           <ul className="text-[#666666]">
-            <Link href="/">
+            <Link href="">
               <li
                 onClick={() => {
                   setMenuOpen(false);
@@ -103,12 +103,14 @@ export default function NavBar() {
                 Projects
               </li>
             </Link>
-            <Link href="/"></Link>
             <div className="flex justify-start py-4">
-              <Link href="/">
+              <Link
+                href="https://www.linkedin.com/in/lucia-espana/"
+                target="_blank"
+              >
                 <LinkedinLogo size={25} />
               </Link>
-              <Link href="/">
+              <Link href="https://github.com/luespana" target="_blank">
                 <GithubLogo size={25} className="ml-6" />
               </Link>
             </div>
