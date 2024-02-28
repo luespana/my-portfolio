@@ -289,7 +289,7 @@ export default function Home() {
             />
             <Card
               title="Paloma Sansores"
-              description="I contribute to the development of this web project where I played a role in both frontend and backend aspects. Leveraging technologies such as Next.js, Tailwind CSS, and Firebase, we crafted an engaging user interface with a clean design and an intuitive user experience."
+              description="I contribute to the development of this web project where I played a role in frontend develop. Leveraging technologies such as Next.js, Tailwind CSS, and Firebase, we crafted an engaging user interface with a clean design and an intuitive user experience."
               img="images/paloma.png"
               onLiveClick={() =>
                 window.open("https://www.palomasansores360.com/")
