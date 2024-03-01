@@ -305,18 +305,17 @@ export default function Home() {
               description="I am the developer and designer behind this live website. It is an e-commerce site that allows the user to view all products according to their categories, add them to the cart, and then proceed with the purchase. It was created with WordPress for a client from Uruguay."
               img="images/freyja.png"
               onLiveClick={() => window.open("https://freyja.com.uy/")}
-              onCodeClick={(e) => {
-                e.preventDefault();
-                window.location.href = "/#projects";
-              }}
+              onCodeClick={() => {}}
             />
             <Card
-              title="Doggo"
-              description="Doggo is a web application crafted with React.js, dedicated to simplifying the process of responsible dog adoption. Users can seamlessly submit details about lost or found dogs, facilitating a quicker and more efficient search for their owners. All data is stored in Firebase."
-              img="images/doggo.png"
-              onLiveClick={() => window.open("https://www.doggoapp.com.ar/")}
+              title="Checkout Pro Integration"
+              description="Checkout Pro is a solution that allows users to make purchases through Mercado Pago payment pages safely and quickly. This is a simple website with Mercado Pago integration to make payments according to the selected amount"
+              img="images/mercado.png"
+              onLiveClick={() =>
+                window.open("https://coffee-mp-app.vercel.app/")
+              }
               onCodeClick={() =>
-                window.open("https://github.com/ezeagusibarra001/doggo-web")
+                window.open("https://github.com/luespana/mp-app")
               }
             />
           </div>

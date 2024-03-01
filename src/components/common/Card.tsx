@@ -15,6 +15,7 @@ type CardProps = {
     | "images/star-wars.png"
     | "images/filmfinity.png"
     | "images/paloma.png"
+    | "images/mercado.png"
     | "images/freyja.png";
   onLiveClick: React.MouseEventHandler<HTMLButtonElement>;
   onCodeClick: React.MouseEventHandler<HTMLButtonElement>;
